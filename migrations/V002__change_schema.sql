@@ -8,7 +8,7 @@ ALTER TABLE product ADD COLUMN price DOUBLE PRECISION;
 DROP TABLE IF EXISTS product_info;
 
 -- Add PRIMARY KEY for Table orders
-ALTER TABLE product ADD CONSTRAINT product_primary_key PRIMARY KEY (id);
+ALTER TABLE orders ADD CONSTRAINT orders_primary_key PRIMARY KEY (id);
 
 -- Add column date_created for Table orders
 ALTER TABLE orders ADD COLUMN date_created DATE DEFAULT CURRENT_DATE;
