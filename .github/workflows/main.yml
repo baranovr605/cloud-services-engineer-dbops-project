@@ -27,7 +27,7 @@ jobs:
         FLYWAY_USER: ${{ secrets.DB_USER }}
         FLYWAY_PASSWORD: ${{ secrets.DB_PASSWORD }}
         FLYWAY_SCHEMAS: public
-        FLYWAY_LOCATIONS: filesystem:migrations
+        FLYWAY_LOCATIONS: filesystem:./migrations
       run: |
         flyway migrate
 
